@@ -16,7 +16,7 @@ def buildProject() {
     echo 'Building project with Maven...'
     sh 'mvn clean package'
 }
-def uploadArtifact(String artifactPath) {
+# def uploadArtifact(String artifactPath) {
     echo 'Uploading artifact...'
     archiveArtifacts artifacts: artifactPath, allowEmptyArchive: true
 }
